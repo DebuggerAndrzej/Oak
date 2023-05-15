@@ -11,7 +11,7 @@ fn main() {
             println!("Configuring rpv...");
             println!("{:?}", args.get_one::<String>("username"));
             if args.contains_id("editor") {
-                println!("{:?}", args.get_one::<String>("editor").unwrap())
+                println!("{:?}", args.get_one::<String>("editor").unwrap());
             }
         }
         _ => {
