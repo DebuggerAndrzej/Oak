@@ -4,4 +4,4 @@
 </div>
 <h2 align="center">RPV - Rust Powered Versioning</h2>
 
-RPV will be an attempt to create a similar to git version control system.
+RPV will be an attempt to create a version control system.
