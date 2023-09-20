@@ -1,11 +1,10 @@
-use crate::utils::{color_print, PrintType};
+use crate::utils::{color_print, is_oak_repo, PrintType};
 use std::fs;
-use std::path::Path;
 
 pub fn plant_repo() {
     let oak_dir = ".oak";
 
-    if Path::new(oak_dir).is_dir() {
+    if is_oak_repo() {
         color_print("Repository already planted!", &PrintType::Warning);
         return;
     }
