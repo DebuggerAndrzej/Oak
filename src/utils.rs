@@ -18,10 +18,10 @@ pub fn color_print(text: &str, print_type: &PrintType) {
 
 pub fn is_oak_repo() -> bool {
     let mut path = env::current_dir().unwrap();
-    let file = Path::new(".oak");
+    let folder = Path::new(".oak");
 
     loop {
-        path.push(file);
+        path.push(folder);
 
         if path.is_dir() {
             return true;
